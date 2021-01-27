@@ -145,8 +145,11 @@
 				
 				
 				}
-			])	
-			liff.closeWindow()
+      ])
+      liff.ready.then(() => {
+  // do something you want when liff.init finishes
+  liff.closeWindow()
+})	
 		}
 		main()
 	</script>
